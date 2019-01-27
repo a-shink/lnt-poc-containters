@@ -1,4 +1,5 @@
 FROM busybox
 WORKDIR "/"
 
-COPY md /app-dist
+COPY htdocs /app-dist
+COPY addons/composer.sh /app-dist
