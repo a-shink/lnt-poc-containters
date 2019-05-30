@@ -1,4 +1,5 @@
-#cp -r /Users/ash/projects/lt/linkandtrain/htdocs htdocs
+rm -rf htdocs
+cp -r /Applications/XAMPP/htdocs/linkandtrain/htdocs htdocs
 rm -rf htdocs/md/vendor/moodle
 rm -f htdocs/md/config.php
 rm -rf htdocs/deploy/configs
