@@ -1,7 +1,7 @@
 Prepate ECR registry via AWS CLI:
 aws ecr create-repository --repository-name lnt-poc/php-fpm
 
-aws ecr get-login --no-include-email
+aws ecr get-login --no-include-email --region=us-west-2
 
 Write base URL for ECR in 'registry' file
 
