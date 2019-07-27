@@ -1,5 +1,9 @@
 Prepate ECR registry via AWS CLI:
-aws ecr create-repository --repository-name lnt-poc/php-fpm
+aws ecr create-repository --repository-name lnt-poc/php-fpm --image-tag-mutability IMMUTABLE --region us-east-2
+
+aws ecr put-image-tag-mutability --repository-name lnt-poc/app  --image-tag-mutability IMMUTABLE --region us-west-2
+
+Check details for tag immutability https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html
 
 aws ecr get-login --no-include-email --region=us-west-2
 
