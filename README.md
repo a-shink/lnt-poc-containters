@@ -16,7 +16,7 @@ See output and check PHP version,
 then define TAG=7.1.26-1(for example) in 'repo' file
 and rebuild with no param and TAG form file will be used
 
-git rev-parse --short=10 HEAD for detect git hash
+`git rev-parse --short=10 HEAD` for detect git hash
 
 >../build.sh 
 
