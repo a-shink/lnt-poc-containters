@@ -5,7 +5,8 @@ aws ecr put-image-tag-mutability --repository-name lnt-poc/app  --image-tag-muta
 
 Check details for tag immutability https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html
 
-aws ecr get-login --no-include-email --region=us-west-2
+Current ECR for test EKS:
+aws ecr get-login --no-include-email --region=us-west-2 --profile=test
 
 Write base URL for ECR in 'registry' file
 
